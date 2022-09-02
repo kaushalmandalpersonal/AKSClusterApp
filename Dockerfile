@@ -14,7 +14,7 @@ RUN mvn clean package
 # Package stage
 #
 
-FROM openjdk:11-jre-slim
+FROM openjdk:8
 
 ARG JAR_NAME="AKSClusterApp"
 
