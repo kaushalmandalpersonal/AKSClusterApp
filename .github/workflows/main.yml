@@ -15,9 +15,9 @@ jobs:
       - uses: actions/checkout@v2
       - uses: azure/docker-login@v1
         with:
-           login-server: akscontainerregistry2022.azurecr.io
-           username: AKSContainerRegistry2022
-           password: Cp8em6BfhONo=qGP5x3Seou=vjoMi5y1
+           login-server: azurecontainerregistryibm.azurecr.io
+           username: AzureContainerRegistryIBM
+           password: zHD/JY2mNsurY1QCVQLktVDI5YdIQIYo
       - run: |
-          docker build . -t akscontainerregistry2022.azurecr.io/azurewebapptoaks:${{ github.sha }}
-          docker push akscontainerregistry2022.azurecr.io/azurewebapptoaks:${{ github.sha }}
+          docker build . -t azurecontainerregistryibm.azurecr.io/azurewebapptoaks:${{ github.sha }}
+          docker push azurecontainerregistryibm.azurecr.io/azurewebapptoaks:${{ github.sha }}
