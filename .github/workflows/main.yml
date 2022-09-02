@@ -19,5 +19,5 @@ jobs:
            username: AKSContainerRegistry2022
            password: Cp8em6BfhONo=qGP5x3Seou=vjoMi5y1
       - run: |
-          docker build . -t akscontainerregistry2022.azurecr.io/AzureWebAppToAKS:${{ github.sha }}
-          docker push akscontainerregistry2022.azurecr.io/AzureWebAppToAKS:${{ github.sha }}
+          docker build . -t akscontainerregistry2022.azurecr.io/azureWebAppToAKS:${{ github.sha }}
+          docker push akscontainerregistry2022.azurecr.io/azureWebAppToAKS:${{ github.sha }}
